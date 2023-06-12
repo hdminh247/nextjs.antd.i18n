@@ -1,0 +1,56 @@
+.general-info-form{
+
+  form{
+    @media #{$medium-and-down} {
+      padding: 16px 0 0 0;
+    }
+  }
+
+  &__title{
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 16px;
+    color: white;
+
+    &--green{
+      color: $PrimaryGreen;
+      font-size: 12px;
+    }
+
+    @media #{$medium-and-down} {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__input-wrapper {
+    margin-bottom: 16px !important;
+    max-width: 70%;
+
+    @media #{$medium-and-down} {
+      max-width: 100%;
+    }
+  }
+
+  &__save-btn{
+    max-width: 30%;
+    width: 100%;
+
+    @media #{$medium-and-down} {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__confirm-btn{
+    max-width: 30%;
+    width: 100%;
+    color: $TextGreyColor !important;
+
+    @media #{$medium-and-down} {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+}

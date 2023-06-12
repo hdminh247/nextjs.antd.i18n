@@ -1,0 +1,232 @@
+.landing-page,
+.about-page {
+	section.centered {
+		text-align: center;
+	}
+
+	section,
+	.page-section {
+		h2 {
+			max-width: 550px;
+			word-break: normal;
+		}
+	}
+
+	.landing-banner {
+		&.min-height-unset {
+			min-height: unset !important;
+		}
+
+		@media only screen and (max-height: 1080px) {
+			min-height: inherit;
+		}
+
+		@media (min-height: 1080px) {
+			min-height: 900px;
+		}
+
+		@media #{$small-and-down} {
+			max-height: unset;
+		}
+
+		max-height: 900px;
+	}
+
+	.landing-banner {
+		@include background-image();
+
+		.landing-banner-content {
+			@include flex-direction(column);
+			@include centered();
+			.buttons-container {
+				.ant-btn-outlined {
+					border-color: $ThemeWowTextColor;
+				}
+				@include flex();
+				gap: 12px;
+				@media #{$medium-and-down} {
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+		}
+
+		.landing-banner-heading {
+			color: white;
+			text-align: center;
+			padding: 0 $BodyPadding;
+		}
+	}
+
+	.product-grid {
+		@media #{$ultra-large-and-up} {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+}
+
+.landing-about-section {
+	@include flex();
+	@include justify-content(space-between);
+
+	.landing-about-section-container {
+		text-align: center;
+		margin-bottom: 24px;
+
+		.title {
+			margin-top: 6px;
+			margin-bottom: 4px;
+		}
+	}
+
+	@media #{$medium-and-down} {
+		@include flex-direction(column);
+	}
+}
+
+.landing-features-section {
+	text-align: center;
+
+	.landing-features-container {
+		@include flex();
+		@include flexwrap(wrap);
+		@include justify-content(space-between);
+
+		.features-content {
+			@include flex();
+			text-align: start;
+			align-items: flex-start;
+			width: 48%;
+			margin-top: 24px;
+
+			@include sm-width(100%);
+
+			img {
+				margin-right: 20px;
+				margin-top: 8px;
+				width: 48px;
+				height: 48px;
+				object-fit: contain;
+			}
+		}
+	}
+}
+
+.landing-payment-section {
+	text-align: center;
+
+	.payment-images {
+		@include flex();
+		grid-gap: 20px;
+		flex-wrap: wrap;
+		@include justify-content(center);
+	}
+
+	img {
+		width: 68px;
+		max-height: 68px;
+		object-fit: contain;
+	}
+}
+
+.page-banner {
+	img {
+		border-radius: $RadiusLarge;
+		width: 100%;
+	}
+}
+
+.landing-wow-gold-section {
+	padding: $PageSectionPadding 0;
+	margin-top: 0;
+	margin-left: 0 !important;
+	//background-color: $SectionBackgroundColor;
+
+	.product-grid {
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	}
+}
+
+.landing-wow-game-time-section {
+	padding: $PageSectionPadding 0;
+}
+
+.landing-top-container {
+	margin-top: -#{$BodyPadding};
+	margin-bottom: -#{$PageSectionMargin};
+	padding-top: $BodyPadding;
+	padding-bottom: $PageSectionPadding;
+	@include background-image('background.webp', left);
+}
+
+.landing-bottom-container {
+	margin-top: 0;
+	padding-top: $BodyPadding;
+	padding-bottom: $PageSectionPadding;
+	@include background-image('background2.webp');
+}
+
+.sell-gold-mobile-only {
+	display: none;
+
+	button {
+		background-color: #ee8f2a !important;
+	}
+
+	@media #{$medium-and-down} {
+		display: block;
+	}
+}
+
+.sell-gold-md-only {
+	display: block;
+
+	@media #{$medium-and-down} {
+		display: none;
+	}
+}
+
+.landing-page {
+	&__game-title-wrapper {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		h2 {
+			margin-bottom: 0;
+		}
+	}
+
+	&__button-grid {
+		width: 100%;
+		flex-wrap: wrap;
+		display: none;
+		justify-content: center;
+
+		@media #{$medium-and-down} {
+			display: flex;
+		}
+
+		button {
+			max-width: 150px;
+			border-color: white !important;
+			margin-right: 15px;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__wrapper{
+		&--small-top{
+			margin-top: 24px;
+
+			@media #{$medium-and-down} {
+				margin-top: 16px;
+			}
+		}
+
+		&--large-top{
+			margin-top: 32px;
+		}
+	}
+}

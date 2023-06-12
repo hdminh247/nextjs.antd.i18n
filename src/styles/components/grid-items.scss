@@ -1,0 +1,134 @@
+.grid-item{
+
+  border-radius: 16px;
+  background-color: $CardBackgroundColor;
+  color: white;
+
+  &__label{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    padding: 0.5em 1em;
+    line-height: 1;
+    color: $PrimaryGreen;
+    background: rgba(0,0,0,0.75);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50px;
+    z-index: 3;
+
+    @media #{$medium-and-down} {
+      font-size: 12px;
+    }
+  }
+
+  &__image{
+    height: 168px;
+    width: 100%;
+    position: relative;
+
+    border-bottom: solid 1px #273d45;
+
+    img{
+      padding: 0 !important;
+    }
+
+    @media #{$medium-and-down} {
+      height: 88px;
+    }
+
+    @media #{$small-and-down} {
+      height: 150px;
+    }
+
+    span{
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+
+  }
+
+  &__footer{
+    padding: 16px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    white-space: nowrap;
+
+    span{
+      text-overflow: ellipsis;
+      width: 100%;
+      overflow: hidden;
+      font-weight: 600;
+    }
+
+    @media #{$medium-and-down} {
+      font-size: 12px;
+      max-height: 27px;
+    }
+
+    img{
+      cursor: pointer;
+    }
+  }
+
+  &__game-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+    gap: 1.25rem 0.75rem;
+
+    a{
+      width: 100%;
+      padding-top: 100%;
+      display: block;
+      position: relative;
+
+      img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &--no-frame{
+      .grid-item__game-list-wrapper{
+        background-color: inherit;
+      }
+
+      .grid-item__bot-info{
+        display: none;
+      }
+    }
+  }
+
+  &__bot-info{
+    padding: 0.625rem;
+    background-color: $CardBackgroundColor;
+    color: white;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  &__game-list-wrapper{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: $CardBackgroundColor;
+  }
+}
+
+[data-theme='light']{
+  .grid-item{
+    background-color: $Grey-300;
+    color: $DefaultBackgroundColor;
+
+    &__image{
+      border-bottom: solid 1px $Grey-200;
+    }
+  }
+}

@@ -1,0 +1,159 @@
+button.ant-btn {
+	@include centered();
+	@include border-radius($Radius);
+	font-size: 14px;
+	font-weight: 600;
+	padding: 20px 32px;
+	border: unset;
+
+	&:hover {
+		opacity: 0.85;
+	}
+
+	&.ant-btn-lg {
+		padding-left: 64px;
+		padding-right: 64px;
+	}
+
+	&.ant-btn-sm {
+		font-size: 14px;
+		padding: 18px 24px;
+		@include border-radius($Radius - 1px);
+	}
+
+	&.ant-btn-primary,
+	&.ant-btn-secondary {
+		border: none !important;
+
+		&.red {
+			background-color: $Red !important;
+		}
+	}
+
+	&.ant-btn-outlined {
+		border: 1px solid $BorderColor;
+		background-color: transparent;
+
+		&.red {
+			color: $Red !important;
+		}
+
+		&.orange {
+			color: $Orange !important;
+		}
+
+		&.accent {
+			color: $AccentColor !important;
+		}
+
+		&.green {
+			color: $Green !important;
+		}
+
+		&:disabled {
+			background-color: transparent !important;
+			opacity: 0.5;
+		}
+	}
+
+	&:disabled {
+		opacity: 0.75;
+	}
+
+	&.ant-btn-icon {
+		@extend .ant-btn-outlined;
+		background-color: transparent;
+		border: none !important;
+		padding: 0;
+		border-radius: 100%;
+		margin-right: 8px;
+
+		span {
+			font-size: 22px;
+		}
+	}
+
+	.ant-btn-loading-icon {
+		margin-right: 8px;
+
+		.anticon {
+			padding: 0 !important;
+		}
+	}
+
+	&.ant-btn-text {
+		background: unset !important;
+
+		&:disabled {
+			background: unset !important;
+		}
+
+		&.red {
+			color: $Red !important;
+		}
+
+		&.green {
+			color: $Green !important;
+		}
+
+		&.accent {
+			color: $AccentColor !important;
+		}
+	}
+
+	&.green{
+		background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%) !important;
+		box-shadow: 0px 3px 13px $Green;
+
+		&:hover{
+			background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+
+		}
+	}
+}
+
+.text-button {
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 600;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	height: max-content;
+}
+
+.page-tabs {
+	@include flex();
+	@include flexwrap(wrap);
+	margin-top: 16px;
+	margin-bottom: 10px;
+
+	a {
+		transition: background-color 0.3s ease-in-out;
+		font-weight: 700;
+		@include flex();
+		justify-content: center;
+		border-radius: $Radius;
+		margin-right: 16px;
+		margin-bottom: 16px;
+		max-width: 230px;
+		min-width: 130px;
+		padding: 12px 24px;
+		@include sm-width(100%);
+	}
+}
+
+.action-buttons {
+	@include valign-wrapper();
+	@include justify-content(flex-end);
+	margin-top: 24px;
+	margin-bottom: 0;
+}
+
+.form-action-buttons {
+	margin-bottom: 0;
+	width: 100%;
+
+	.ant-form-item {
+		width: max-content;
+	}
+}

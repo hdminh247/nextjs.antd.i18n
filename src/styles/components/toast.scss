@@ -1,0 +1,28 @@
+.error-toast{
+  background-color: $ActiveItemColor !important;
+  color: $Grey-500;
+
+  .ant-notification-notice-message{
+    color: $Red;
+    font-weight: bold;
+  }
+
+  .ant-notification-notice-close-icon{
+    color: $Grey-500
+  }
+}
+
+
+.success-toast{
+  background-color: $ActiveItemColor !important;
+  color: $Grey-500;
+
+  .ant-notification-notice-message{
+    color: $Green-500;
+    font-weight: bold;
+  }
+
+  .ant-notification-notice-close-icon{
+    color: $Grey-500
+  }
+}

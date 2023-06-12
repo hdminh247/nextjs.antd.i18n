@@ -1,0 +1,102 @@
+.data-table{
+    thead{
+      th{
+        background: $DefaultPageColor !important;
+        color: white !important;
+        font-size: 14px;
+        font-weight: 700 !important;
+        border: none !important;
+
+        @media #{$medium-and-down} {
+          font-weight: 400 !important;
+          padding: 8px 16px !important;
+        }
+      }
+    }
+
+  .ant-table-body{
+    max-height: unset !important;
+    overflow-y: unset !important;
+  }
+
+  .ant-table-cell-scrollbar{
+    box-shadow: none !important;
+  }
+
+  .ant-table-cell-row-hover{
+    background-color: inherit !important;
+  }
+
+  td{
+    border: none !important;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background: $CardDarkBackgroundColor;
+
+    @media #{$medium-and-down} {
+      background: $CardBackgroundColor;
+    }
+  }
+  tr:nth-child(odd) {
+    background: $DefaultPageColor;
+
+    @media #{$medium-and-down} {
+      background: $CardBackgroundColor;
+    }
+  }
+
+  &--grey{
+    color: $TextGreyColor;
+  }
+
+  &--green{
+    color: $PrimaryGreen;
+  }
+
+}
+
+[data-theme='light']{
+  .data-table{
+    thead{
+      th{
+        background: $Grey-200 !important;
+        color: black !important;
+      }
+    }
+
+    .ant-table-cell-row-hover{
+      background-color: inherit !important;
+    }
+
+    td{
+      border: none !important;
+      color: $DefaultBackgroundColor;
+    }
+
+    tr:nth-child(even) {
+      background: white;
+
+      @media #{$medium-and-down} {
+        background: white;
+      }
+    }
+    tr:nth-child(odd) {
+      background: $Grey-200;
+
+      @media #{$medium-and-down} {
+        background: $Grey-200;
+      }
+    }
+
+    &--grey{
+      color: $TextGreyColor;
+    }
+
+    &--green{
+      color: $PrimaryGreen;
+    }
+
+  }
+}

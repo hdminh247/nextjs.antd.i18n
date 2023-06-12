@@ -1,0 +1,19 @@
+{
+  "the_best_online": "The best online",
+  "create_an_account": "Create an account",
+  "enter_your_information": "Enter your information",
+  "username": "Username",
+  "enter_the_username": "Enter the username",
+  "please_input_your_username": "Please input your username",
+  "email": "Email",
+  "enter_the_email": "Enter the email",
+  "please_input_your_email": "Please input your email",
+  "password": "Password",
+  "enter_the_password": "Enter the password",
+  "please_input_your_password": "Please input your password",
+  "by_ticking_the_box": "By ticking the box you indicate that you have read and acknowledge",
+  "term_of_service": "Term of Service",
+  "sign_up": "Sign Up",
+  "already_have_an_account": "Already have an account",
+  "login": "Login"
+}

@@ -1,0 +1,11 @@
+.ant-menu{
+  .ant-menu-sub{
+    padding-left: 16px !important;
+    .ant-menu-item-selected{
+      opacity: 1 !important;
+    }
+    .ant-menu-item{
+      opacity: 0.5;
+    }
+  }
+}

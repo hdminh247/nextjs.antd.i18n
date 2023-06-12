@@ -1,0 +1,93 @@
+$Font: '888', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 'Helvetica Neue', sans-serif;
+$FontHeading: 'Ubuntu', #{$Font};
+
+// Colors
+$DefaultBackgroundColor: #19262B;
+$DefaultPageColor: #162226;
+$DefaultButtonBackgroundColor: #202F35;
+$CardBackgroundColor: #202F35;
+$CardDarkBackgroundColor: #19262B;
+$ActiveItemColor: #212F35;
+$AccentColor: #4c14ff;
+$ForegroundColor: rgba(0, 0, 0, 0.05);
+$ForegroundColorLight: rgba(white, 0.04);
+$TextColorLight: rgba(0, 0, 0, 0.65);
+$TextColor: white;
+$TextGreyColor: #404F55;
+$BorderColor: #213137;
+$GreyBorderColor: #22343A;
+$InputBorderColor: #667880;
+$SectionBackgroundColor: rgba(0, 0, 0, 0.2);
+// Themes
+$ThemeWowSecondary: $AccentColor;
+$ThemeWowAccent: $ThemeWowSecondary;
+$ThemeWowBackground: #19262B;
+$ThemeWoWForegroundColor: darken($ThemeWowBackground, 2);
+$ThemeWowTextColorLight: lighten($ThemeWowBackground, 65);
+$ThemeWowTextColor: white;
+$ThemeWowBorderColor: rgba($ThemeWoWForegroundColor, 0.24);
+
+$DarkGreen-400: #151617;
+$DarkGreen-450: #0a161a;
+$DarkGreen-500: #1c1e22;
+$Green: #3CC38B;
+$PrimaryGreen: #33C16C;
+$Green-500: #3BC117;
+$LightRed: #ff4e50;
+$Red: #EB5757;
+$Blue: #3bb9ff;
+$Yellow: #F2C94C;
+$Orange: #ffa200;
+$Grey-200: #efefef;
+$Grey-250: #f9f9f9;
+$Grey-300: #c9c7c7;
+$Grey-500: #98A7B5;
+$Grey-600: #656e78;
+$Pink-500: #bf6ba2;
+
+// Elements
+$NavbarSize: 64px;
+$SidebarSize: 240px; // variables.js
+$ChatBarSizeWithoutPadding: 360px; // 360px: chat bar size, 20px, the padding, minus the padding to hide the scrollbar which cant be modify by js
+$ChatBarSize: 360px; // 360px: chat bar size
+
+// Padding
+$BodyPadding: 24px;
+$FooterPageMargin: 40px;
+$PageSectionMargin: 60px;
+$PageSectionMarginSmall: 30px;
+$PageSectionPadding: $PageSectionMargin;
+
+// Misc
+$Radius: 4px;
+$RadiusLarge: 12px;
+$MaxPageWidthFull: 1430px;
+$MaxPageWidth: 1430px;
+$CardShadow: 0 0px 20px 0 rgba(0, 0, 0, 0.4);
+$Transition: 0.3s ease-in-out;
+
+// Components
+$DropdownItemHorizontalPadding: 20px;
+$ContentTopPadding: $NavbarSize;
+$PromotionsBannerHeight: 72px;
+
+// Media Query Ranges
+$small-screen-up: 657px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$ultra-large-screen-up: $MaxPageWidth !default;
+$small-screen: 656px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+$ultra-large-screen: $MaxPageWidth - 1px !default;
+$medium-and-up: 'only screen and (min-width : #{$small-screen-up})' !default;
+$large-and-up: 'only screen and (min-width : #{$medium-screen-up})' !default;
+$extra-large-and-up: 'only screen and (min-width : #{$large-screen-up})' !default;
+$ultra-large-and-up: 'only screen and (min-width : #{$ultra-large-screen-up})' !default;
+$small-and-down: 'only screen and (max-width : #{$small-screen})' !default;
+$medium-and-down: 'only screen and (max-width : #{$medium-screen})' !default;
+$medium-only: 'only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})' !default;
+
+// Z-index
+$HeaderLayoutIndex: 997;
+$ContentLayoutIndex: 997;

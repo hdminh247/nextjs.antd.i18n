@@ -1,0 +1,43 @@
+.bottom-navigation-bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: $DefaultBackgroundColor;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  z-index: 100;
+
+  &__item{
+    text-align: center;
+
+    .ant-badge{
+      color: white !important;
+      line-height: inherit !important;
+
+      .ant-badge-multiple-words{
+        @media #{$medium-and-down} {
+          padding: 0 3px;
+        }
+      }
+    }
+  }
+}
+
+[data-theme='light']{
+
+  .bottom-navigation-bar{
+    background-color: white;
+    color: $DefaultBackgroundColor;
+    box-shadow: 0 -8px 5px -5px rgba(0, 0, 0, 0.12);
+
+    &__item{
+      img{
+        filter: invert(66%) sepia(45%) saturate(500%) hue-rotate(76deg) brightness(143%) contrast(87%);
+      }
+    }
+  }
+}

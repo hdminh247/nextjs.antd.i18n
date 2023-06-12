@@ -1,0 +1,171 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0;
+	@include heading();
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 64px;
+	font-weight: 700;
+	@include md-font-size(50px);
+	@include sm-font-size(36px);
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: 700;
+	@include md-font-size(42px);
+	@include sm-font-size(34px);
+}
+
+h3 {
+	font-size: 38px;
+	font-weight: 600;
+	@include md-font-size(36px);
+	@include sm-font-size(26px);
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 600;
+	@include md-font-size(22px);
+	@include sm-font-size(18px);
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: 600 !important;
+	@include md-font-size(18px);
+	@include sm-font-size(16px);
+}
+
+h6 {
+	font-size: 18px;
+	font-weight: 500;
+	@include md-font-size(16px);
+	@include sm-font-size(14px);
+}
+
+.body,
+.body3 {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.body1 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.body2 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.body4 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+// Util
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.normal {
+	font-weight: 400;
+}
+
+.medium {
+	font-weight: 500;
+}
+
+.semibold {
+	font-weight: 600;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.xbold {
+	font-weight: 800;
+}
+
+// Pages
+.page-title {
+	@extend h2;
+}
+
+.page-subtitle {
+	@extend h4;
+	font-size: 18px;
+}
+
+.page-description {
+	@extend .body3;
+	font-weight: 600;
+}
+
+.page-section-title {
+	@extend h3;
+}
+
+.page-section-title2 {
+	@extend h3;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.page-section-subtitle {
+	@extend .body2;
+	font-weight: 500;
+}
+
+p.page-section-subtitle {
+	font-weight: 600;
+}
+
+.markdown {
+	font-size: 16px;
+
+	p {
+		min-height: 1em;
+	}
+
+	ul,
+	ol {
+		padding-left: $BodyPadding;
+	}
+}
+
+.ant-alert-message {
+	font-weight: 500;
+}
+
+.text-light {
+	color: $TextColorLight !important;
+}
+
+p {
+	margin-bottom: unset !important;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+.text{
+	&--green{
+		color: $Green-500;
+	}
+}

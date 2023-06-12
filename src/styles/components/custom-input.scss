@@ -1,0 +1,101 @@
+.custom-input{
+
+  &__label{
+    color: $TextGreyColor;
+    font-size: 12px;
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  input, textarea{
+    background-color: $CardBackgroundColor;
+    padding: 8px 16px;
+    border: 2px solid $InputBorderColor;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+
+    &:focus, &:hover{
+      box-shadow: none;
+      border-color: $InputBorderColor;
+    }
+  }
+
+  .ant-input-affix-wrapper{
+    background-color: $CardBackgroundColor !important;
+    border: 2px solid $InputBorderColor !important;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .ant-input-group-addon{
+    background-color: $CardBackgroundColor;
+    border-right: 2px solid $InputBorderColor;
+    border-top: 2px solid $InputBorderColor;
+    border-bottom: 2px solid $InputBorderColor;
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    cursor: pointer;
+  }
+
+  &--icon-after{
+    input{
+      border-right: none;
+    }
+
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $TextGreyColor !important;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $TextGreyColor !important;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $TextGreyColor !important;
+  }
+}
+
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input, .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover{
+  background-color: $CardBackgroundColor !important;
+}
+
+.ant-form-item-explain-error{
+  padding-bottom: 16px;
+}
+
+.ant-input[disabled]{
+  background-color: inherit !important;
+  color: white !important;
+  border-color: $InputBorderColor !important;
+}
+
+[data-theme='light']{
+  .custom-input {
+
+    input, textarea{
+      background-color: white;
+      padding: 8px 16px;
+      border: 2px solid $Grey-300;
+      border-radius: 4px;
+      color: $DefaultBackgroundColor;
+      font-size: 16px;
+
+      &:focus, &:hover{
+        box-shadow: none;
+        border-color: $Grey-300;
+      }
+    }
+
+
+    .ant-input-group-addon{
+      background-color: white;
+      border-right: 2px solid $Grey-300;
+      border-top: 2px solid $Grey-300;
+      border-bottom: 2px solid $Grey-300;
+    }
+  }
+}

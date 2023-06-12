@@ -1,0 +1,76 @@
+.login-form{
+
+  @media #{$medium-and-down} {
+    border: 2px solid $TextGreyColor;
+    border-radius: 8px;
+    background-color: $CardDarkBackgroundColor;
+  }
+
+  &__image{
+    background-image: url(/images/login-left-bg-image.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px 0px 0px 16px;
+  }
+
+  &__right-content{
+    padding: 72px 24px;
+
+    @media #{$medium-and-down} {
+      padding: 16px 8px;
+    }
+  }
+
+  &__logo-text{
+    color: white;
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+
+    @media #{$medium-and-down} {
+      font-size: 18px;
+    }
+  }
+
+  &__sub-title{
+    font-size: 16px;
+    color: white;
+
+    @media #{$medium-and-down} {
+      font-size: 14px;
+    }
+
+    &--green{
+      color: $PrimaryGreen
+    }
+  }
+
+  &__input-wrapper{
+    margin-bottom: 16px !important;
+  }
+
+  &__forgot-pass-section{
+    color: $TextGreyColor;
+    text-align: center;
+  }
+}
+
+[data-theme='light']{
+  .login-form{
+
+    @media #{$medium-and-down} {
+      background-color: white;
+    }
+
+    &__title{
+      color: $DefaultBackgroundColor;
+    }
+
+    &__sub-title{
+      color: $DefaultBackgroundColor;
+    }
+  }
+}

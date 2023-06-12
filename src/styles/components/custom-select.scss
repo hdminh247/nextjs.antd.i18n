@@ -1,0 +1,103 @@
+.custom-select{
+  &--no-border{
+    &.input-select {
+      &.ant-select {
+        &.ant-select-single{
+          .ant-select-selector {
+            border: none !important;
+          }
+        }
+
+      }
+    }
+  }
+
+  &.ant-select{
+    min-width: 120px;
+
+    .ant-select-selector{
+      background-color: $CardBackgroundColor !important;
+      color: white;
+      height: auto !important;
+      padding-top: 4px !important;
+      padding-bottom: 4px !important;
+      border: 1px solid $BorderColor !important;
+      border-radius: 4px !important;
+      box-shadow: none !important;
+
+      .ant-select-selection-item{
+        display: flex;
+        align-items: center;
+
+        img{
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .ant-select-arrow{
+      color: white;
+    }
+  }
+
+  &.input-select{
+    &.ant-select{
+      .ant-select-selector{
+        border: 2px solid $TextGreyColor !important;
+        border-radius: 4px !important;
+      }
+    }
+  }
+
+  &__label{
+    font-size: 12px;
+    color: $TextGreyColor;
+    margin-bottom: 4px;
+  }
+}
+
+.ant-select-item-option-content{
+  img{
+    margin-right: 4px;
+  }
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+  background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+  color: white !important;
+}
+
+.ant-select-dropdown{
+  background-color: $DefaultButtonBackgroundColor !important;
+  border-radius: 4px !important;
+  padding-top: 0 !important;
+
+  .ant-select-item-option-content{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.ant-select-item{
+  background-color: $DefaultButtonBackgroundColor !important;
+  color: $TextGreyColor !important;
+}
+
+.ant-select-arrow{
+  color: $TextGreyColor !important;
+}
+
+.ant-select-selection-item{
+  font-weight: 700 !important;
+}
+
+[data-theme='light']{
+  .ant-select-dropdown{
+    background-color: white !important;
+  }
+
+  .ant-select-item{
+    background-color: white !important;
+    color: $DefaultBackgroundColor !important;
+  }
+}

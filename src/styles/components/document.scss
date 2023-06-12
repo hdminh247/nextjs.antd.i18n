@@ -1,0 +1,58 @@
+.document{
+
+  &__title{
+    font-weight: 700;
+    font-size: 27px;
+    color: white;
+
+    @media #{$small-and-down} {
+      font-size: 18px;
+    }
+  }
+
+  &__info{
+    font-weight: 400;
+    font-size: 12px;
+    color: $TextGreyColor;
+    margin-bottom: 24px;
+  }
+
+  &__block{
+    background-color: $DefaultBackgroundColor;
+    padding: 24px;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 24px;
+
+    @media #{$small-and-down} {
+      padding: 16px 8px;
+    }
+
+    &--title{
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 24px;
+
+      @media #{$small-and-down} {
+        font-size: 14px;
+      }
+    }
+
+
+    &--description{
+      color: $TextGreyColor;
+      font-size: 14px;
+
+      @media #{$small-and-down} {
+        font-size: 12px;
+      }
+    }
+
+    &--description-white{
+      color: white;
+      font-size: 14px;
+    }
+
+
+  }
+}

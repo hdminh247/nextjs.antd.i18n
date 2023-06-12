@@ -1,0 +1,258 @@
+[data-theme='dark']{
+  .theme-rocket-bet{
+
+    .ant-layout-sider{
+      background-color: $DefaultBackgroundColor;
+    }
+
+    .ant-layout-header{
+      background-color: $DefaultBackgroundColor;
+    }
+
+    .ant-btn {
+
+      &.ant-btn-primary{
+        background: $DefaultButtonBackgroundColor;
+
+        &:hover{
+          background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+          box-shadow: 0px 3px 13px $Green;
+        }
+      }
+
+      &.common-btn{
+        background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+        box-shadow: 0px 3px 13px $Green;
+        padding: 12px 60px;
+        min-height: 40px;
+        min-width: 230px;
+      }
+
+    }
+
+    .ant-menu{
+      background-color: $DefaultBackgroundColor;
+
+      span{
+        color: white;
+        font-weight: 600;
+      }
+
+      .ant-menu-item-selected{
+
+        span{
+          color: $PrimaryGreen;
+        }
+
+      }
+    }
+
+
+    .ant-divider{
+      border-top: solid 1px $TextGreyColor;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+
+  }
+
+  .ant-btn {
+
+    &.ant-btn-primary{
+      background: $DefaultButtonBackgroundColor;
+
+      &:hover{
+        background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+        box-shadow: 0px 3px 13px $Green;
+      }
+    }
+
+    &.common-btn{
+      background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+      box-shadow: 0px 3px 13px $Green;
+      padding: 12px 60px;
+      min-height: 40px;
+      min-width: 230px;
+    }
+
+    &.yellow-btn{
+      background: linear-gradient(90deg, #fcb828 0%, #a54615 100%);
+      box-shadow: 0px 3px 13px #fcb828;
+      padding: 12px 60px;
+      min-height: 40px;
+      min-width: 230px;
+
+      &:hover{
+        background: linear-gradient(90deg, #fcb828 0%, #a54615 100%);
+        box-shadow: 0px 3px 13px #fcb828;
+      }
+    }
+
+  }
+}
+
+[data-theme='light']{
+  .theme-rocket-bet{
+
+    .ant-layout{
+      background-color: white !important;
+    }
+
+    .ant-layout-content{
+      background-color: white !important;
+    }
+
+    .ant-layout-sider{
+      background-color: white;
+    }
+
+    .ant-layout-header{
+      background-color: white;
+    }
+
+    .page-root{
+      background: white;
+    }
+
+    .ant-btn {
+
+      &.ant-btn-primary{
+        background: $DefaultButtonBackgroundColor;
+
+        &:hover{
+          background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+          box-shadow: 0px 3px 13px $Green;
+        }
+      }
+
+      &.common-btn{
+        background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+        box-shadow: 0px 3px 13px $Green;
+        padding: 12px 60px;
+        min-height: 40px;
+        min-width: 230px;
+      }
+
+    }
+
+    .ant-menu{
+      background-color: white;
+
+      span{
+        color: $DefaultBackgroundColor;
+        font-weight: 600;
+      }
+
+      .ant-menu-item-selected{
+
+        span{
+          color: $DefaultBackgroundColor;
+        }
+
+      }
+
+      .ant-menu-submenu-arrow::before, .ant-menu-submenu-arrow::after{
+        color: $DefaultBackgroundColor;
+      }
+    }
+
+    .sidebar-container {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+
+      .sidebar-content .ant-menu .ant-menu-item-selected{
+        background-color: $Grey-200;
+      }
+
+      .navbar-search {
+        background: white;
+      }
+
+      .sidebar-header{
+        &__logo{
+          img{
+            filter: invert(66%) sepia(45%) saturate(500%) hue-rotate(76deg) brightness(0%) contrast(87%);
+          }
+        }
+
+        img{
+          filter: invert(66%) sepia(45%) saturate(500%) hue-rotate(76deg) brightness(0%) contrast(87%);
+        }
+
+        &__mobile-close-btn{
+          filter: invert(66%) sepia(45%) saturate(500%) hue-rotate(76deg) brightness(0%) contrast(87%);
+        }
+      }
+
+      &__language-selection .ant-select .ant-select-selector{
+        background-color: white !important;
+        color: $DefaultBackgroundColor;
+        border: 1px solid $Grey-300 !important;
+      }
+
+      .sidebar-content .ant-menu .icon{
+        filter: invert(66%) sepia(45%) saturate(500%) hue-rotate(76deg) brightness(143%) contrast(87%);
+      }
+
+      .sidebar-search-container{
+        &--with-close-btn{
+          background-color: $Grey-300;
+
+          img{
+            filter: invert(66%) sepia(45%) saturate(500%) hue-rotate(76deg) brightness(0%) contrast(87%);
+          }
+        }
+      }
+    }
+
+
+    .ant-divider{
+      border-top: solid 1px $TextGreyColor;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    .sidebar-header{
+      background-color: white;
+
+      svg{
+        filter: invert(66%) sepia(45%) saturate(500%) hue-rotate(76deg) brightness(0%) contrast(87%);
+      }
+    }
+
+    .sidebar-container{
+      background-color: white;
+    }
+
+
+  }
+
+  .ant-btn {
+
+    &.ant-btn-primary{
+      background: $DefaultButtonBackgroundColor;
+
+      &:hover{
+        background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+        box-shadow: 0px 3px 13px $Green;
+      }
+    }
+
+    &.common-btn{
+      background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+      box-shadow: 0px 3px 13px $Green;
+      padding: 12px 60px;
+      min-height: 40px;
+      min-width: 230px;
+    }
+
+  }
+
+  .ant-divider{
+    border-top: solid 2px $Grey-200 !important;
+  }
+
+  .brand-logo{
+    filter: invert(66%) sepia(45%) saturate(500%) hue-rotate(76deg) brightness(0%) contrast(87%);
+  }
+}

@@ -1,0 +1,39 @@
+.login-dialog{
+
+  .ant-modal{
+    width: 100% !important;
+    max-width: 786px !important;
+
+    .ant-modal-content{
+      border: none !important;
+
+      @media #{$medium-and-down} {
+        background-color: transparent !important;
+        padding-top: 68px !important;
+      }
+
+      .ant-modal-close{
+
+        .ant-modal-close-x{
+          width: 44px !important;
+          height: 44px !important;
+          line-height: 44px !important;
+        }
+
+        @media #{$medium-and-down} {
+          background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+          box-shadow: 0px 3px 13px #3cc38b;
+          border-radius: 50%;
+          left: 50%;
+          transform: translateX(-50%);
+          right: unset;
+        }
+      }
+    }
+
+    @media #{$medium-and-down} {
+      max-width: calc(100% - 16px) !important;
+    }
+  }
+
+}

@@ -1,0 +1,80 @@
+.select-checkbox{
+  font-size: 14px;
+
+  input{
+    //opacity: 0 !important;
+  }
+
+  &__item-count{
+    color: $PrimaryGreen;
+    font-weight: normal;
+  }
+
+  &__control{
+    background-color: $CardBackgroundColor !important;
+    padding-left: 1rem;
+    min-width: 200px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  &__indicator{
+    color: $TextGreyColor !important;
+  }
+
+  &__indicator-separator{
+    color: $TextGreyColor !important;
+    background-color: $TextGreyColor !important;
+  }
+
+  &__menu{
+    background-color: $CardBackgroundColor !important;
+  }
+
+  &__option{
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    label{
+      font-weight: normal !important;
+      color: $TextGreyColor;
+    }
+
+    &--is-focused{
+      background-color: inherit !important;
+      //color: $PrimaryGreen !important;
+    }
+
+    &--is-selected{
+      background-color: inherit !important;
+
+      label{
+        color: $PrimaryGreen;
+      }
+
+      .select-checkbox__tag{
+        background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+      }
+
+      .ant-checkbox-inner{
+        background: linear-gradient(90deg, #3DC68D 0%, #278B62 100%);
+        border: solid 1px $PrimaryGreen;
+      }
+    }
+
+    .ant-checkbox-inner{
+      background-color: $CardBackgroundColor !important;
+      border: solid 1px $TextGreyColor;
+    }
+  }
+
+  &__tag{
+    padding: 2px 8px;
+    background-color: $TextGreyColor;
+    border-radius: 12px;
+    font-weight: normal;
+    font-size: 12px;
+  }
+}
